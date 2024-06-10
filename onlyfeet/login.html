@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="title">OnlyFeet - Connexion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1><a href="accueil.html"> <img src="images/OnlyFeetLogo.png" class="logoimage"</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="about.html" data-lang="nav_about">À Propos</a></li>
+            <li><a href="contact.html" data-lang="nav_contact">Contact</a></li>
+            <li><a href="compte.html" data-lang="nav_account">Compte</a></li>
+            <li><a href="dons.html" data-lang="dons_account">Dons</a></li>
+          </ul>
+        </nav>
+        <div class="langue-select">
+          <select name="langue" id="langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="zu">Zulu</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="login">
+        <h2 data-lang="login_heading">Connexion</h2>
+        <form action="/login" method="post">
+          <div class="form-group">
+            <label for="username" data-lang="username_label">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password" data-lang="password_label">Mot de passe :</label>
+            <div class="password-container">
+              <input type="password" id="password" name="password" required />
+              <button type="button" id="togglePassword" class="toggle-password">Afficher</button>
+            </div>
+          </div>
+          <button type="submit" data-lang="login_button">Se connecter</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p data-lang="footer">© 2024 OnlyFeet. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

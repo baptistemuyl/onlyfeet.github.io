@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="title">OnlyFeet - Accueil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1><a href="accueil.html"> <img src="images/OnlyFeetLogo.png" class="logoimage"</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="about.html" data-lang="nav_about">À Propos</a></li>
+            <li><a href="contact.html" data-lang="nav_contact">Contact</a></li>
+            <li><a href="compte.html" data-lang="nav_account">Compte</a></li>
+            <li><a href="dons.html" data-lang="don_account">Dons</a></li>
+          </ul>
+        </nav>
+        <div class="langue-select">
+          <select name="langue" id="langue">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="zu">Zulu</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1 data-lang="home_heading">Accueil</h1>
+        <p data-lang="home_welcome">Bienvenue sur OnlyFeet, la plateforme dédiée aux passionnés de pieds.</p>
+      </section>
+      <section id="fake-accounts">
+        <h2 data-lang="members_heading">Nos Membres</h2>
+        <ul>
+          <li>
+            <p><strong data-lang="user1_name">Utilisateur 1</strong></p>
+            <p data-lang="user1_desc">Passionné de pieds depuis 5 ans.</p>
+            <img
+              src="https://www.medisite.fr/files/images/article/1/1/8/5521811/vignette-focus_0.jpg"
+              alt="User 1"
+              class="user-image"
+            />
+          </li>
+          <li>
+            <p><strong data-lang="user2_name">Utilisateur 2</strong></p>
+            <p data-lang="user2_desc">Amateur de photos artistiques de pieds.</p>
+            <img
+              src="https://www.artalistic.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/d/e/de_ar.0921_006.jpg"
+              alt="User 2"
+              class="user-image"
+            />
+          </li>
+          <li>
+            <p><strong data-lang="user3_name">Utilisateur 3</strong></p>
+            <p data-lang="user3_desc">Collectionneur de chaussettes rares.</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTlN5KKK2L1FKE_2U8X_ia4fSSKga9E4icg&s"
+              alt="User 3"
+              class="user-image"
+            />
+          </li>
+          <li>
+            <p><strong data-lang="user4_name">Utilisateur 4</strong></p>
+            <p data-lang="user4_desc">Expert en pédicure esthétique.</p>
+            <img
+              src="https://www.institutmariepauline.fr/wp-content/uploads/2021/10/54100907_m-1920-1024x768.jpg.webp"
+              alt="User 4"
+              class="user-image"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p data-lang="footer">© 2024 OnlyFeet. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/* Reset some basic elements for consistency across browsers */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f1690e; /* Orange */
+  color: white;
+}
+
+.logo {
+  flex: 1;
+  text-align: center; /* Centrer le logo horizontalement */
+}
+
+.logo h1 {
+  font-size: 2.5em;
+}
+
+.logo h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #cc5200; /* Darker Orange */
+}
+
+.nav-links li a[data-lang="signup"] {
+  font-size: 1.3em; /* Plus gros */
+  color: #ffcc00; /* Couleur dans le thème */
+  font-weight: bold; /* En gras */
+}
+
+.langue-select {
+  flex: 1;
+  text-align: right;
+}
+
+.langue-select select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #ff6600; /* Orange */
+  color: white;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ff6600; /* Orange */
+  color: white;
+  border-top: 3px solid #cc5200; /* Darker Orange */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  text-align: center; /* Centrer tous les éléments h1 */
+  font-size: 3em; /* Agrandir le texte */
+  font-weight: bold; /* Mettre le texte en gras */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .langue-select {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+#fake-accounts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#fake-accounts li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.user-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Pour que l'image remplisse le conteneur sans se déformer */
+  border-radius: 50%; /* Pour rendre l'image circulaire */
+}
+
+.logoimage {
+  width: 100px;
+  height: 70px;
+  object-fit: cover; /* Pour que l'image remplisse le conteneur sans se déformer */
+}
+
+/* Styles for the password toggle button */
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  background-color: #ff6600; /* Orange */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-password:hover {
+  background-color: #cc5200; /* Darker Orange */
+}
